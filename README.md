@@ -33,7 +33,7 @@ cd btlogger<BR>
 
 Update "inc/run-reports.sh" with your correct BLUETOOTH MAC ADDRESS:<BR>
 
-## CHANGE MAC ADDRESS BELOW  VVVVVVV
+CHANGE MAC ADDRESS BELOW  VVVVVVV
 cd /var/lib/bluetooth/01:02:03:AB:CD:DE/cache ; /usr/bin/tail -n +1 * > /opt/btlogger/BT-devices.txt
 
 <BR><BR>
