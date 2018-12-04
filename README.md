@@ -23,20 +23,25 @@ pip install --upgrade pip
 INSTALLING:<br>
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-<BR>
 
-Install 'btlogger' into /opt:<BR>
+1. Install 'btlogger' into /opt:<BR>
 
 GIT CLONE the 'btlogger' script/framework:<BR>
 cd /opt<BR>
 git clone https://github.com/LostRabbitLabs/btlogger<BR>
-cd btlogger<BR>
+cd btlogger
 <BR><BR>
 
-Update "inc/run-reports.sh" with your correct BLUETOOTH MAC ADDRESS:<BR>
+2. Update "inc/run-reports.sh" with your correct BLUETOOTH MAC ADDRESS:<BR>
 
 CHANGE MAC ADDRESS BELOW  VVVVVVV<BR>
-cd /var/lib/bluetooth/01:02:03:AB:CD:DE/cache ; /usr/bin/tail -n +1 * > /opt/btlogger/BT-devices.txt
+cd /var/lib/bluetooth/01:02:03:AB:CD:DE/cache ; /usr/bin/tail -n +1 * > /opt/btlogger/BT-devices.txt<BR><BR>
 
-<BR>
+3. ENSURE EXECUTABLE PERMISSIONS:<BR>
+cd /opt/btlogger<BR>
+chmod -R 655 *
+
+<BR><BR>
+
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-<BR>
 HOW TO USE:<BR>
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-<BR>
